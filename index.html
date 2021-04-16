@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLack Wolf</title>
+    <meta property="og:title" content="Our Room" />
+    <meta property="og:description" content="غرفتنا" />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website"/>
+    <link rel="icon" href="mai.jpg">
+    <link rel="stylesheet" href="mai.jpg">
+    <link rel="apple-touch-icon" href="mai.jpg">
+    <style>
+        #content{
+                width: 100%;
+                margin: auto;
+           }
+       header{
+           width: 85%;
+           height: 130px;
+           
+           float: left;
+       }
+       nav{
+           width: 15%;
+           background:rgb(84, 230, 84);
+           height: 110px;
+           float: left;
+       }
+       main{
+           float: left;
+           width: 1000px;
+           height: 2000px;
+          
+       }
+
+       main article{
+           float: right;
+           margin: 10px;
+           width: 450px;
+           height: 450px;
+           
+           border: 2px;
+           
+          text-align: center;
+       }  
+       footer{
+           clear: both;
+           width: 100%;
+           height: 90px;
+           background: rgb(186, 253, 255);
+
+       }
+        li{
+                background: chartreuse;
+                padding: 10px;
+                margin: 5px;
+                color: whitesmoke;
+                height: 10px;
+            }
+        button{
+                background: chartreuse;
+                border: 0px;
+            }
+            dialog{
+                float: right;
+            }
+            dialog button{
+                background: white;
+          
+            }
+            details{
+                 background: rgb(14, 197, 253);
+                 border: 1px solid;
+                  color: white;
+                  font-weight: bold;
+                 
+            }
+            summary{
+                 border: 2px solid white;
+                 padding: 45px;
+                 background: rgb(14, 197, 253);
+            }
+            p{
+                
+                height: 50px;
+                border:1px solid ;
+                direction: rtl;
+                
+            }
+       </style>
+    </head>
+    <body lang="ar" id="bd" background="back.jpg">
+        
+
+        <div id="content">
+            <header>
+                <img src="h2.jpg" width="100%px" height="110px"/>
+                <div style="color: rgb(235, 10, 10);"><strong> غرفتنا</strong> <b>(إذا لم تكن البحر أو حوريته, <ins>اخرج </ins>من هنا)</b> </div>
+            </header>
+    
+            <nav>
+                <details>
+                    <summary>أقسام أخرى</summary>
+                    <p><a href="accauns.html" target="_blank"><center>حساباتنا</center></a></p>
+                    <p><a href="numbers.html" target="_blank"><center>أرقامنا</center></a></p>
+                    <p><a href="sinds.html" target="_blank"><center>أغانينا</center></a></p>
+                    <p><a href="https://www.facebook.com/messages/t/100014961498383" target="_blank"><center>غرفتنا</center></a></p>
+
+                </details>
+            </nav>
+    
+            <main>
+                <center><div>قم بالضغط على زر التشغيل</div><audio src="mai.mp3" controls autoplay></audio></center>
+             <article>
+                 <h1 style="margin: 0px; padding: 2px, 0px;"> البحر</h1>
+                <a href="https://www.facebook.com/Muhand.Molaaeb/" target="_blank"><img src="b.jpg" width="80%" height="400px" /></a>
+                <br>
+                <span style=" font-size: 30px; background-color: rgb(132, 236, 236); color: #ffff00eb;size: a5;"> Muhannd Molaaeb- مهند ملاعب</span>
+
+             </article>
+             <article>
+                <h1 style="margin: 0px; padding: 2px, 0px;">الحورية</h1>
+                <a href="https://www.facebook.com/profile.php?id=100014961498383" target="_blank"><img src="mai.jpg" width="80%" height="400px" /></a>
+                <br>
+                <span style="color: #00e1ffee;font-size: 30px; background-color: rgb(132, 236, 236);"> My Love Mai Kharoüs- حبيبتي ميوش</span>
+             </article>
+             <br>
+             <center>
+             <fieldset style=" border: 0px; margin: 20px; width: 150px; ">
+                 <center><legend style="font-size: 25px; color: rgb(204, 10, 253);"><b>اختر مناسبة</b></legend></center>
+                 <center>
+                    
+                 <ul type="disk" >
+                 
+                 <li><button onclick="opendialog()">أول لقاء</button> </li>
+                 <li><button onclick="opendialog1()">ثاني لقاء</button> </li>
+                 <li><button onclick="opendialog2()">أجمل مناسبة</button> </li>
+                 <li><button onclick="opendialog3()">ميلاد البحر</button> </li>
+                 <li><button onclick="opendialog4()">ميلاد الحورية</button> </li>
+                 
+             </ul>
+            
+            </center>
+            </fieldset>
+            </center>
+            <dialog id="d" ">
+                <fieldset id="fd">
+                    <legend>أول لقاء</legend>
+                    <div><em>كان اول لقاء بتاريخ :</em></div>
+                    <div><code>18-09-2019</code></div>
+                    <button onclick="closedialog()">اغلاق </button>
+                </fieldset>
+             </dialog>
+             &nbsp;
+             <dialog id="d1">
+                <fieldset>
+                    <legend>ثاني لقاء</legend>
+                    <div><em>كان ثاني لقاء بتاريخ :</em></div>
+                    <div><code>21-12-2020</code></div>
+                    <button onclick="closedialog1()">اغلاق </button>
+                </fieldset>
+             </dialog>
+             <br>
+
+             <dialog id="d2">
+                <fieldset>
+                    <legend>أجمل مناسبة</legend>
+                    <div><em>كان ذلك بداية طريق الحب</em></div>
+                    <div><code>13-03-2021</code></div>
+                    <button onclick="closedialog2()">اغلاق </button>
+                </fieldset>
+             </dialog>
+             <br>
+
+
+             <dialog id="d3">
+                <fieldset>
+                    <legend>ميلاد البحر</legend>
+                    <div><code>10-06-1998</code></div>
+                    <button onclick="closedialog3()">اغلاق </button>
+                </fieldset>
+             </dialog>
+             <br>
+
+
+             <dialog id="d4">
+                <fieldset>
+                    <legend>ميلاد الحورية</legend>
+                    <div><em>صادف ذلك اليوم المجيد بتاريخ:</em></div>
+                    <div><code>04-12-1998</code></div>
+                    <button onclick="closedialog4()">اغلاق </button>
+                </fieldset>
+             </dialog>
+             <br>
+             
+             <article style="width: 650; margin: 150px;">
+             <div><video src="video.mp4" controls width="400"></video></div>
+            </article>
+            </main>
+    
+            <footer dir="rtl">
+                <h1>تم تصميمه بواسطة المبرمج: مهند ملاعب(البحر)-Designed by: Muhannd Molaaeb (The Sae)</h1>
+            </footer>
+        </div>
+        
+
+        <script>
+            function opendialog(){
+                document.getElementById("d").setAttribute("open","true");
+            }
+            function closedialog(){
+                document.getElementById("d").removeAttribute("open");
+            }
+            function opendialog1(){
+                document.getElementById("d1").setAttribute("open","true");
+            }
+            function closedialog1(){
+                document.getElementById("d1").removeAttribute("open");
+            }
+            function opendialog2(){
+                document.getElementById("d2").setAttribute("open","true");
+            }
+            function closedialog2(){
+                document.getElementById("d2").removeAttribute("open");
+            }function opendialog3(){
+                document.getElementById("d3").setAttribute("open","true");
+            }
+            function closedialog3(){
+                document.getElementById("d3").removeAttribute("open");
+            }function opendialog4(){
+                document.getElementById("d4").setAttribute("open","true");
+            }
+            function closedialog4(){
+                document.getElementById("d4").removeAttribute("open");
+            }
+        </script>
+
+    </body>
+</html>
